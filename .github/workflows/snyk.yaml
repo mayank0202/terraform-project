@@ -5,16 +5,15 @@ on:
   push:
     branches:
       - '**'     # matches every branch
-      - '!main'  # excludes main
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   security:
     runs-on: 
       - self-hosted
-      - refarch 
+      - master
     name: snyk
     steps:
        - name: checkout
