@@ -27,6 +27,6 @@ jobs:
        - name: snyk monitor
          run: snyk iac test --report
          env:
-           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
+           SNYK_TOKEN: ${{ secrets.ARC_SNYK_TOKEN }} 
 
   
