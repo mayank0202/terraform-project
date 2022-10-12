@@ -18,16 +18,15 @@ jobs:
          with:
            command: monitor
            args: --severity-threshold=low
-       - name: Set up Node 12
+       - name: Set up Node 18
          uses: actions/setup-node@v3
          with:
-             node-version: 12
+             node-version: 18
        - name: install Snyk CLI
          run: npm install -g snyk
        - name: snyk monitor
          run: snyk iac test --report
          env:
            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
-
 
   
