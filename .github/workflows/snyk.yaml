@@ -12,7 +12,7 @@ on:
 jobs:
   security:
     runs-on: 
-      - master
+      - self-hosted
     name: snyk
     steps:
        - name: checkout
