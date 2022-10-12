@@ -26,6 +26,8 @@ jobs:
              node-version: 16
        - name: install Snyk CLI
          run: npm install -g snyk
+       - name: snyk auth
+         run:  snyk auth
        - name: snyk monitor
          run: snyk iac test   
 
