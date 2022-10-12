@@ -24,12 +24,10 @@ jobs:
              node-version: 16
        - name: install Snyk CLI
          run: npm install -g snyk
-       - name: snyk auth
-         run:  snyk auth
-         env:
-           ARC_SNYK_TOKEN: ${{ secrets.ARC_SNYK_TOKEN }}
        - name: snyk monitor
-         run: snyk iac test   
+         run: snyk iac test  
+         env:
+           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} 
 
 
   
