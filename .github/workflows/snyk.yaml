@@ -15,8 +15,6 @@ jobs:
          uses: actions/checkout@v2
        - name: Vulnerability scan
          uses: snyk/actions/iac@master
-         env:
-           SNYK_TOKEN: ${{ secrets.ARC_SNYK_TOKEN }}
          with:
            command: monitor
            args: --severity-threshold=low
@@ -28,6 +26,8 @@ jobs:
          run: npm install -g snyk
        - name: snyk auth
          run:  snyk auth
+         env:
+           ARC_SNYK_TOKEN: ${{ secrets.ARC_SNYK_TOKEN }}
        - name: snyk monitor
          run: snyk iac test   
 
