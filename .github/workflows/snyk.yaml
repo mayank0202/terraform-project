@@ -4,7 +4,7 @@ name: snyk
 on:
   push:
     branches:
-      - '**'     # matches every branch
+      - 'master'     # matches every branch
   pull_request:
     branches:
       - master
@@ -12,7 +12,6 @@ on:
 jobs:
   security:
     runs-on: 
-      - self-hosted
       - master
     name: snyk
     steps:
