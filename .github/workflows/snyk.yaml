@@ -8,9 +8,7 @@ on:
 
 jobs:
   security:
-    runs-on: 
-      - self-hosted
-      - master
+    runs-on: ubuntu-latest
     name: snyk
     steps:
        - name: checkout
