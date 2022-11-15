@@ -1,8 +1,4 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/sourcefuse/
-terraform-module-aws-bootstrap/badge.svg)]
-
-(https://snyk.io/test/github/sourcefuse/
-terraform-module-aws-bootstrap)
+[![Known Vulnerabilities](https://snyk/sourcefuse/terraform-module-aws-bootstrap/badge.svg)] 
 
 # terraform-project
 
