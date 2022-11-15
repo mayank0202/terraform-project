@@ -1,4 +1,4 @@
-[![Known Vulnerabilities](https://snyk.io/test/github/sourcefuse/terraform-module-aws-bootstrap/badge.svg)](https://snyk.io/test/github/sourcefuse/terraform-module-aws-bootstrap)
+<*a href="https://snyk.io/test/github/sourcefuse/terraform-module-aws-bootstrap">
 
 # terraform-project
 
